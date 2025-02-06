@@ -1,0 +1,8 @@
+Total: /60
+
+1. 5/5 Good idea to plot both!
+2. 5/5 Good use of identities rather than inspection
+3. 5/5 I didn't know about matplotlib_venn. Was looking for a visual explanation of terms in the formula, but this was not given.
+4. 5/5
+5. 5/5
+6.
