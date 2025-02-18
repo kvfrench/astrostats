@@ -37,6 +37,7 @@ plt.figure(figsize=(12, 5))
 plt.hist(sample_mean, bins=50, density=True, alpha=0.6, color='b', label="Histogram of Samples")
 
 # Overlay a Gaussian curve from CLT
+# I am surprised that the match is not better.
 x_values = np.linspace(min(sample_mean), max(sample_mean), 100)
 plt.plot(x_values, norm.pdf(x_values, expected_mean, expected_std), 'r', lw=2, label="Central Limit Theorem Predicted Gaussian")
 
@@ -48,7 +49,7 @@ plt.axvline(upper_bound, color='g', linestyle='dashed')
 plt.axvline(expected_mean, color='black', linestyle='dotted', label="Population Mean (μ)")
 plt.title("Demonstration of the Central Limit Theorem, Sample Size = 10")
 plt.xlabel("Sample Mean")
-plt.ylabel("Density")
+plt.ylabel("Probability Density") # "Density" can mean many things.
 plt.legend()
 plt.grid()
 plt.show()

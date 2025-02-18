@@ -19,12 +19,14 @@ p_values = np.linspace(0, 1, 100)
 # Compute probability for each reliability value
 changing_blue = (p_values * P_blue) / (p_values * P_blue + (1 - p_values) * P_green)
 
+# I usually try to not have redundant annotations. More for people to read and then process the fact that redundant.
 # Plot the results
 plt.figure(figsize=(8, 5))
-plt.plot(p_values, changing_blue, label="Probality Correct Witness ID", color="blue")
+plt.plot(p_values, changing_blue, color="blue")
 plt.xlabel("Witness Reliability ")
 plt.ylabel("Probability Correct ID")
-plt.title("Effect of Witness Reliability on Probability of Correct Color ID")
-plt.legend()
+#plt.title("Effect of Witness Reliability on Probability of Correct Color ID")
+#plt.legend()
 plt.grid()
+plt.savefig("HW2_2.png", dpi=600) # I put this in to automate
 plt.show()

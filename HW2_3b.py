@@ -51,6 +51,8 @@ plt.xscale("log")  # Use a log scale for better visualization
 plt.grid()
 plt.show()
 
+# Good to see use of symbols in comments. Can also use in plots. Use either
+# Unicode symbol like in comments or matplotlib's 'mathtext', e.g., $\epsilon$
 # For n=100, determine the range [−ϵ,ϵ] for which 99% of the sample means fall in
 n = 100
 sample_mean3 = np.array([np.mean(np.random.normal(mu, sigma, n)) for _ in range(trials)])

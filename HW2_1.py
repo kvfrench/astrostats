@@ -13,8 +13,8 @@ The five available colors are red, blue, purple, pink, and cyan.
 The owner of the cafe has specified that she doesn't want colors to repeat.
 Order matters in this problem, because, for example, if you put red as the first stripe, that is different
 than putting red as the second stripe. The colors can be shuffled to sit in each of the five spots.
-This coode will calculate how many unique orderings there are. 
-It will also calculate some simple probabilites assuming the colors are picked randomly.
+This code will calculate how many unique orderings there are. 
+It will also calculate some simple probabilities assuming the colors are picked randomly.
 
 """
 
@@ -29,9 +29,9 @@ r = 5  # Colors to arrange
 num_permutations = math.factorial(n) // math.factorial(n - r)
 print("The total number of permutations of paint stripes:", num_permutations)  
 
-#probability that red will appear in the first column, if randomly choosen
+#probability that red will appear in the first column, if randomly chosen
 red_1 = math.factorial(4)
-prob_red_1 = red_1/num_permutations
+prob_red_1 = red_1/num_permutations # Seems like a complicated way of getting at 1/5, which prob. of red.
 print("The probability of randomly getting red as the first stripe:", prob_red_1)
 
 #function to explore probability of picking red first n times
