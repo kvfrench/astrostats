@@ -1,0 +1,6 @@
+Total: /40
+
+
+1. 10/10 - I suggest limiting axes to min/max of observed k so features easier to see. Choice of colors on 3_1b makes it difficult to see difference.
+2. /10
+3. /20
