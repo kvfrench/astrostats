@@ -30,7 +30,7 @@ plt.axvline(x=sigma**2, color='red', linestyle='dashed', label="True Variance = 
 plt.axvline(x=var_sb, color='purple', linestyle='dashed', label=f"Biased Variance = {var_sb:.4f}") 
 plt.title(f"Histogram of $S_b^2$ (biased variance)\nMean: {avg_sb:.4f}, Variance: {var_sb:.4f}")
 plt.xlabel("$S_b^2$")
-plt.ylabel("Frequency")
+plt.ylabel("Count")
 plt.legend()
 plt.grid()
 plt.show()
