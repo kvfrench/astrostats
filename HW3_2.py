@@ -43,7 +43,10 @@ binomial_p = stats.binom.pmf(k_values, hours, hourly_flare_rate)
 
 
 #Plot histogram of simulated data
-plt.hist(daily_flare_rate, bins=range(0, max(daily_flare_rate) + 2), density=True, alpha=0.75, edgecolor='black', label="Simulated Data $P_s(k)$")
+# width=0.1 is slightly better, but bins are not centered. I'd 
+# use np.histogram to get the bin values and plt.bar. (In my plot, I didn't use
+# bars or stems because I wanted to use semilogy)
+plt.hist(daily_flare_rate, bins=range(0, max(daily_flare_rate) + 2), width=0.1, density=True, alpha=0.75, edgecolor='black', label="Simulated Data $P_s(k)$")
 
 # Overlay Poisson distribution
 plt.plot(k_values, poisson_p, 'ro-', markersize=5, label=r"Poisson $P_p(k)$")
