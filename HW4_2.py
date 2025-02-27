@@ -39,6 +39,10 @@ bootstrap_values = np.array(bootstrap_values)
 
 # Compute mean and variance of bootstrap sample variances
 mean_bootstrap = np.mean(bootstrap_values)
+
+# Good that you calculated, but it is not what we are interested in.
+# Somewhat confusing to put a line on the plot for it without
+# reference to theoretical values. 
 var_bootstrap = np.var(bootstrap_values, ddof=1)
 
 # Compute the exact mean and variance of the sampling distribution
@@ -60,8 +64,9 @@ plt.axvline(var_bootstrap, color='gray', linestyle='-', linewidth=2, label=f'Boo
 plt.axvline(mean_bootstrap, color='purple', linestyle=':', linewidth=2, label=f'Bootstrap Mean = {mean_bootstrap:.3f}')
 plt.xlabel('S² (Sample Variance)')
 plt.ylabel('Probability Density')
+# Exact value is 1, which is sigma of gaussian population distribution
 plt.title(f'Bootstrap & Theoretical Distribution of S²\n'
-          f'Mean: Bootstrap = {mean_bootstrap:.3f}, Exact = {exact_mean:.3f} | '
+          f'Mean: Bootstrap = {mean_bootstrap:.3f}, Exact = {1.0} | '
           f'Variance: Bootstrap = {var_bootstrap:.3f}, Exact = {exact_variance:.3f}')
 plt.legend()
 plt.grid()

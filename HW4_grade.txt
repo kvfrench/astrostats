@@ -1,5 +1,5 @@
 Total: /40
 
 1. /10
-2. /10
+2. 10/10 -- But see comments in code. Good answer for part 4., but the variance of the bootstrap S^2 seems wrong and I'd use the bootstrap sampling distribution to address the claim (see solns).
 3. /20
