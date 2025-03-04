@@ -1,5 +1,5 @@
-Total: /40
+Total: 28/40
 
-1. /10
+1. 0/10
 2. 10/10 -- But see comments in code. Good answer for part 4., but the variance of the bootstrap S^2 seems wrong and I'd use the bootstrap sampling distribution to address the claim (see solns).
-3. /20
+3. 18/20 -- Should not have such large differences between Poisson and Binomial; see comments in soln. Great points for part 3; see Wheatland 2000 figure 2. We are only looking at 3 years of data, so solar cycle effect may not be visible.
