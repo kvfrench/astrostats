@@ -1,0 +1,7 @@
+Total: 30/30
+
+Most did not plot distributions for these problems. I tend
+to make many plots for sanity checks.
+
+1. 15/15
+2. 15/15

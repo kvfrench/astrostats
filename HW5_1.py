@@ -39,6 +39,7 @@ num_samples2 = 10000 #sample for bootstrapping
 variance_array2 = [] #empty array for bootstrapping output
 
 #bootstrapping of large Gaussian sample
+# Try writing w/o loop.
 for i in range(num_samples2):
     boot_sampling2 = np.random.choice(large_vals, size = len(large_vals), replace = True)
     variance_array2.append(np.var(boot_sampling2, ddof=1))
@@ -62,7 +63,9 @@ chi2_upper = stats.chi2.ppf(0.975, df)
 lower_CI2 = (df * boot_var_mean) / chi2_upper
 upper_CI2 = (df * boot_var_mean) / chi2_lower
 
-
 # Print results
+# Not really Devore's method. Is called "standard bootstrap CI".
+# Other approach is "bootstrap percentile CI"
+# (I didn't give details about this).
 print(f"95% CI for σ², using Devore's method': ({lower_CI2:.0f}, {upper_CI2:.0f})")
 

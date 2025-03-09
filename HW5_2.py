@@ -18,6 +18,9 @@ annual stipend was and that it averaged $34,000.
 
 """
 
+# If problem involved CIs for mean, seems you should have compared their CI
+# with bootstrap CI for mean.
+
 import numpy as np
 from scipy.stats import norm
 
@@ -69,6 +72,7 @@ pay_distro2 = np.random.normal(loc=M, scale=sigma, size=sample_pop)
 means_array2 = []
 
 #bootstrapping for loop
+# Try avoiding loop.
 for i in range(num_samples):
     boot_sampling2 = np.random.choice(pay_distro2, size = len(pay_distro2), replace = True)
     means_array2.append(np.mean(boot_sampling2))
