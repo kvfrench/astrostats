@@ -1,0 +1,5 @@
+Total: /30
+
+1. 9/10 - For part 3., only one case applied, but you computed both cases, which is why part 4. seemed redundant. My wording could have been better. For part 5, your statement "The rejection region defined in part 3, is anything that falls outside of the confidence interval." is not consistent with the plot of the error bar and rejection region. See my Figure 1.
+2. /10
+3. /10
